@@ -1,0 +1,2658 @@
+v1.8.9 Apr 11, 2023
+====================
+
+* Add node 16.20.0, remove node 16.19.0 for stack(s) cflinuxfs4, cflinuxfs3
+
+* Don't run `yarn check` which creates a duplicate cache. Instead, we can add the `--check-files` flag to the `yarn install` command and get the same outcome.
+
+
+v1.8.8 Mar 24, 2023
+====================
+
+* Bring our own Python for node-gyp
+
+
+v1.8.7 Mar 14, 2023
+====================
+
+* Add node 18.15.0, remove node 18.13.0 for stack(s) cflinuxfs4, cflinuxfs3
+
+
+v1.8.6 Feb 20, 2023
+====================
+
+* Add node 18.14.1, remove node 18.12.1 for stack(s) cflinuxfs4, cflinuxfs3
+
+* Add node 16.19.1, remove node 16.18.1 for stack(s) cflinuxfs3, cflinuxfs4
+
+* Add node 14.21.3, remove node 14.21.1 for stack(s) cflinuxfs3, cflinuxfs4
+
+* Update Node 16.x deprecation date (Nodejs update on SSL deprecation) [ref](https://nodejs.org/en/blog/vulnerability/february-2023-security-releases/)
+
+
+v1.8.5 Jan 13, 2023
+====================
+
+* Add node 18.13.0, remove node 18.10.0
+  for stack(s) cflinuxfs3, cflinuxfs4
+  (https://www.pivotaltracker.com/story/show/184166535)
+
+* Add node 16.19.0, remove node 16.18.0 (#545)
+  for stack(s) cflinuxfs4, cflinuxfs3 [#184024312]
+
+* Add node 14.21.2, remove node 14.20.1
+  for stack(s) cflinuxfs4, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/184023976)
+
+v1.8.4 Dec 12, 2022
+====================
+
+* Bumps default node version to 18
+
+
+v1.8.3 Nov 06, 2022
+====================
+
+* Add node 18.12.1, remove node 18.19.0
+  for stack(s) cflinuxfs3, cflinuxfs4
+
+* Add node 14.21.1, remove node 14.20.0
+  for stack(s) cflinuxfs3, cflinuxfs4
+
+* Add node 16.18.1, remove node 16.17.1
+  for stack(s) cflinuxfs3, cflinuxfs4
+  (https://www.pivotaltracker.com/story/show/183724805)
+
+* Bumps go.mod go version to 1.19
+
+
+v1.8.2 Oct 13, 2022
+====================
+
+* Add node 16.18.0, remove node 16.17.0 for stack(s) cflinuxfs4, cflinuxfs3
+
+* Adding error message when npm install fails (#522)
+
+
+v1.8.1 Sep 29, 2022
+====================
+
+* Add node 18.10.0, remove node 18.7.0 for stack(s) cflinuxfs3, cflinuxfs4
+
+* Add node 16.17.1, remove node 16.16.0 for stack(s) cflinuxfs4, cflinuxfs3
+
+* Add node 14.20.1, remove node 14.19.3 for stack(s) cflinuxfs4, cflinuxfs3
+
+* Fix error with Yarn Workspaces (#511)
+
+
+v1.8.0 Sep 13, 2022
+=====================
+
+* Add support for cflinuxfs4 stack
+
+
+v1.7.74 Sep 09, 2022
+=====================
+
+* Add node 14.20.0 for stack(s) cflinuxfs4
+
+* Add node 16.17.0, remove node 16.15.1 for stack(s) cflinuxfs3
+
+* Add node 16.17.0 for stack(s) cflinuxfs4
+
+* Add node 18.9.0, remove node 18.6.0 for stack(s) cflinuxfs3
+
+* Add node 18.9.0 for stack(s) cflinuxfs4
+
+
+v1.7.73 Aug 08, 2022
+=====================
+
+* Add node 18.6.0, remove node 18.5.0 for stack(s) cflinuxfs3
+
+* Add node 18.7.0 for stack(s) cflinuxfs3
+
+
+v1.7.72 Jul 08, 2022
+=====================
+
+* Add node 14.20.0, remove node 14.19.2 for stack(s) cflinuxfs3
+
+* Add node 16.16.0, remove node 16.15.0 for stack(s) cflinuxfs3
+
+* Add node 18.5.0 for stack(s) cflinuxfs3
+
+* Setup SSL_CERT_DIR env var inside the app container for Node 18.x (#466)
+
+
+v1.7.71 Jun 08, 2022
+=====================
+
+* Deprecate NodeJS 12.X.X (EOL reached) (#453)
+
+* Add node 14.19.3, remove node 14.19.1 for stack(s) cflinuxfs3
+
+* Add node 16.15.1, remove node 16.14.2 for stack(s) cflinuxfs3
+
+* Add yarn 1.22.19, remove yarn 1.22.18 for stack(s) cflinuxfs3
+
+
+v1.7.70 May 09, 2022
+=====================
+
+* Add node 14.19.2, remove node 14.19.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/182076907)
+
+* Add node 16.15.0, remove node 16.14.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/182006894)
+
+* Add support for SeaLights Node.js agent integration.
+  (https://github.com/cloudfoundry/nodejs-buildpack/pull/443)
+
+
+v1.7.69 Apr 07, 2022
+=====================
+
+* Remove sealights integration which was causing some problems when building applications.
+
+
+v1.7.68 Apr 06, 2022
+=====================
+
+* Adding Sealights integration (#433)
+
+* Add node 12.22.12, remove node 12.22.9 for stack(s) cflinuxfs3
+
+* Add node 14.19.1, remove node 14.18.2 for stack(s) cflinuxfs3
+
+* Add node 16.14.2, remove node 16.13.1 for stack(s) cflinuxfs3
+
+* Add yarn 1.22.18, remove yarn 1.22.17 for stack(s) cflinuxfs3
+
+
+v1.7.67 Feb 09, 2022
+=====================
+
+* Add node 12.22.10, remove node 12.22.8
+
+* Add node 12.22.9, remove node 12.22.7
+
+* Add node 14.19.0, remove node 14.18.1
+
+* Add node 16.14.0, remove node 16.13.0
+
+
+v1.7.66 Jan 05, 2022
+=====================
+
+* Add node 12.22.8, remove node 12.22.6
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/180669704)
+
+
+v1.7.65 Dec 09, 2021
+=====================
+
+* Add node 16.13.1, remove node 16.11.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/180494829)
+
+* Add node 14.18.2, remove node 14.18.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/180480654)
+
+* Update libbuildpack
+
+* Readme: Update packager install instructions
+
+* Bump github.com/onsi/gomega from 1.14.0 to 1.17.0
+  Bumps [github.com/onsi/gomega](https://github.com/onsi/gomega) from 1.14.0 to 1.17.0.
+  - [Release notes](https://github.com/onsi/gomega/releases)
+  - [Changelog](https://github.com/onsi/gomega/blob/master/CHANGELOG.md)
+  - [Commits](https://github.com/onsi/gomega/compare/v1.14.0...v1.17.0)
+  
+  ---
+  updated-dependencies:
+  - dependency-name: github.com/onsi/gomega
+    dependency-type: direct:production
+    update-type: version-update:semver-minor
+  ...
+
+* Bump github.com/Dynatrace/libbuildpack-dynatrace from 1.4.1 to 1.4.2
+  Bumps [github.com/Dynatrace/libbuildpack-dynatrace](https://github.com/Dynatrace/libbuildpack-dynatrace) from 1.4.1 to 1.4.2.
+  - [Release notes](https://github.com/Dynatrace/libbuildpack-dynatrace/releases)
+  - [Commits](https://github.com/Dynatrace/libbuildpack-dynatrace/compare/v1.4.1...v1.4.2)
+  
+  ---
+  updated-dependencies:
+  - dependency-name: github.com/Dynatrace/libbuildpack-dynatrace
+    dependency-type: direct:production
+    update-type: version-update:semver-patch
+  ...
+
+
+v1.7.64 Nov 09, 2021
+=====================
+
+* Add node 16.13.0, remove node 16.10.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/180088515)
+  (https://www.pivotaltracker.com/story/show/180015753)
+
+
+v1.7.63 Oct 18, 2021
+=====================
+
+* Remove support for deprecated version 15.x
+  See https://github.com/cloudfoundry/nodejs-buildpack/issues/386
+  Node 15.x reached End of Line on 2021-06-01.
+  (https://github.com/nodejs/Release)
+
+* Add yarn 1.22.17, remove yarn 1.22.15
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179962758)
+  (https://www.pivotaltracker.com/story/show/179961794)
+
+* Add node 16.11.1, remove node 16.8.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179908280)
+  (https://www.pivotaltracker.com/story/show/179869844)
+
+* Add node 12.22.7, remove node 12.22.5
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179908290)
+
+* Add node 14.18.1, remove node 14.17.6
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179907722)
+
+
+v1.7.62 Sep 30, 2021
+=====================
+
+* Update default node version to 16.x
+  (https://github.com/cloudfoundry/nodejs-buildpack/issues/374)
+
+* Add yarn 1.22.15, remove yarn 1.22.10
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179761027)
+  (https://www.pivotaltracker.com/story/show/179753501)
+  (https://www.pivotaltracker.com/story/show/179012448)
+
+* Add node 14.18.0, remove node 14.17.5
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179736417)
+
+* Add node 16.10.0, remove node 16.7.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179678847)
+  (https://www.pivotaltracker.com/story/show/179544287)
+  (https://www.pivotaltracker.com/story/show/179491957)
+
+
+v1.7.61 Sep 01, 2021
+=====================
+
+* Add node 14.17.6, remove node 14.17.4
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179422584)
+
+* Add node 12.22.6, remove node 12.22.4
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179422443)
+
+* Add node 16.8.0, remove node 16.6.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179366775)
+
+
+v1.7.60 Aug 19, 2021
+=====================
+
+* Add node 16.7.0, remove node 16.6.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179261209)
+
+
+v1.7.59 Aug 12, 2021
+=====================
+
+* Add node 16.6.2, remove node 16.6.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179196899)
+
+* Add node 14.17.5, remove node 14.17.2, 14.17.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179196629)
+
+* Add node 12.22.5, remove node 12.22.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179196584)
+
+
+v1.7.58 Jul 30, 2021
+=====================
+
+* Add node 16.6.0, remove node 16.4.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179071567)
+
+* Add node 14.17.4, remove node 14.17.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179058593)
+
+* Add node 12.22.4, remove node 12.22.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/179058693)
+
+
+v1.7.57 Jul 15, 2021
+=====================
+
+* Add node 16.5.0, remove node 16.4.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178880041)
+  (https://www.pivotaltracker.com/story/show/178775458)
+
+* Add node 14.17.3, remove node 14.17.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178775165)
+
+* Add node 12.22.3, remove node 12.22.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178775175)
+
+
+v1.7.56 Jul 01, 2021
+=====================
+
+* Add node 16.4.1, remove node 16.3.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178745365)
+
+* Add node 14.17.2, remove node 14.17.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178744506)
+
+* Add node 12.22.2, remove node 12.22.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178744504)
+
+
+v1.7.55 Jun 23, 2021
+=====================
+
+* Add node 16.4.0, remove node 16.2.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178641361)
+
+* Add node 14.17.1, remove node 14.16.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178540117)
+
+
+v1.7.54 Jun 11, 2021
+=====================
+
+* Add node 16.3.0, remove node 16.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178389043)
+
+* Updating github-config
+
+
+v1.7.53 Jun 01, 2021
+=====================
+
+* Remove node 10.x
+(https://github.com/cloudfoundry/nodejs-buildpack/issues/300)
+
+* Make node 14.x the default version
+(https://github.com/cloudfoundry/nodejs-buildpack/issues/300)
+
+v1.7.52 May 25, 2021
+=====================
+
+* Add node 16.2.0, remove node 16.0.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178212453)
+
+v1.7.51 May 18, 2021
+=====================
+
+* Add node 14.17.0, remove node 14.16.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178122733)
+
+* Update libbuildpack
+
+v1.7.50 May 05, 2021
+=====================
+
+* Update libbuildpack
+
+* Add node 16.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/178022994)
+
+
+v1.7.49 Apr 27, 2021
+=====================
+
+* Add node 16.0.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177854714)
+
+v1.7.48 Apr 16, 2021
+=====================
+
+* Add node 15.14.0, remove node 15.12.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177655037)
+
+* Add node 14.16.1, remove node 14.15.5
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177654221)
+
+* Add node 12.22.1, remove node 12.21.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177654216)
+
+* Add node 10.24.1, remove node 10.23.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177654217)
+
+v1.7.47 Apr 05, 2021
+=====================
+
+* Add node 15.13.0, remove node 15.11.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177579768)
+
+* Add node 12.22.0, remove node 12.20.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177562518)
+
+
+v1.7.46 Mar 24, 2021
+=====================
+
+* Add node 15.12.0, remove node 15.10.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177390670)
+
+
+v1.7.45 Mar 10, 2021
+=====================
+
+* Add node 15.11.0, remove node 15.9.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177180581)
+
+
+v1.7.44 Feb 23, 2021
+=====================
+
+* Add node 14.16.0, remove node 14.15.4
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177058691)
+
+* Add node 15.10.0, remove node 15.8.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177058677)
+
+* Add node 10.24.0, remove node 10.23.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177058688)
+
+* Add node 12.21.0, remove node 12.20.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/177058675)
+
+
+v1.7.43 Feb 18, 2021
+=====================
+
+* Add node 15.9.0, remove node 15.7.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176991357)
+
+* Add node 12.20.2, remove node 12.20.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176895565)
+
+
+v1.7.42 Feb 10, 2021
+=====================
+
+* Add node 10.23.3, remove node 10.23.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176877880)
+
+* Add node 14.15.5, remove node 14.15.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176871123)
+
+* Add node 15.8.0, remove node 15.5.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176773019)
+
+
+v1.7.41 Jan 26, 2021
+=====================
+
+* Add node 10.23.2, remove node 10.23.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176665321)
+
+* Add node 15.7.0, remove node 15.4.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176661204)
+
+
+v1.7.40 Jan 05, 2021
+=====================
+
+* Add node 15.5.1, remove node 15.3.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176349147)
+
+* Add node 14.15.4, remove node 14.15.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176349110)
+
+* Add node 12.20.1, remove node 12.19.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176348921)
+
+* Add node 10.23.1, remove node 10.22.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176348801)
+
+v1.7.39 Dec 21, 2020
+=====================
+
+* Add node 14.15.3, remove node 14.15.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176226349)
+
+* Add node 14.15.2, remove node 14.15.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176226326)
+
+
+v1.7.38 Dec 14, 2020
+=====================
+
+* Update libbuildpack
+
+* Add node 15.4.0, remove node 15.2.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/176074461)
+
+
+v1.7.37 Dec 01, 2020
+=====================
+
+* Add node 12.20.0, remove node 12.19.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175879250)
+
+* Add node 15.3.0, remove node 15.2.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175879001)
+
+
+v1.7.36 Nov 24, 2020
+=====================
+
+* Add node 14.15.1, remove node 14.14.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175746010)
+
+* Add node 15.2.1, remove node 15.0.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175745856)
+
+* Add node 12.19.1, remove node 12.18.4
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175746184)
+
+
+v1.7.35 Nov 12, 2020
+=====================
+
+* Add node 15.2.0, remove node 15.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175675340)
+
+
+v1.7.34 Nov 03, 2020
+=====================
+
+* Add node 14.15.0, remove node 14.13.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175463306)
+
+* Add node 10.23.0, remove node 10.22.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175463184)
+
+
+v1.7.33 Oct 26, 2020
+=====================
+
+* Add node 15.0.1, remove node 15.0.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175397565)
+
+v1.7.32 Oct 19, 2020
+=====================
+
+* Add node 14.14.0, remove node 14.13.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175298310)
+
+
+v1.7.31 Oct 12, 2020
+=====================
+
+* Add node 14.13.1, remove node 14.12.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175175754)
+
+* Add node 12.19.0, remove node 12.18.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175154579)
+
+* Add yarn 1.22.10, remove yarn 1.22.5
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175143529)
+
+
+v1.7.30 Oct 05, 2020
+=====================
+
+* Add node 14.13.0, remove node 14.10.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/175046720)
+
+
+v1.7.29 Sep 22, 2020
+=====================
+
+* Add node 14.12.0, remove node 14.9.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174935562)
+  (https://www.pivotaltracker.com/story/show/174832553)
+
+* Add node 12.18.4, remove node 12.18.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174832654)
+
+* Add node 10.22.1, remove node 10.21.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174832015)
+
+
+v1.7.28 Sep 14, 2020
+=====================
+
+* Add node 14.10.1, remove node 14.10.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174755940)
+
+* Add node 14.10.0, remove node 14.8.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174713314)
+
+
+v1.7.27 Aug 31, 2020
+=====================
+
+* Add node 14.9.0, remove node 14.7.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174534212)
+
+* Add yarn 1.22.5, remove yarn 1.22.4
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174530399)
+
+* Update libbuildpack
+
+
+v1.7.26 Aug 17, 2020
+=====================
+
+* Update libbuildpack
+
+* Add node 14.8.0, remove node 14.5.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/174281369)
+
+* Prints warning in more specific case
+  The warning should not appear if the versions specified by .nvmrc and
+  package.json are the same.
+
+
+v1.7.25 Jul 30, 2020
+=====================
+
+* Add node 14.7.0, remove node 14.4.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173932244)
+
+* Add node 12.18.3, remove node 12.18.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173948576)
+
+* Add node 10.22.0, remove node 10.20.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173925072)
+
+
+v1.7.24 Jul 08, 2020
+=====================
+
+* Identical release to v1.7.23
+
+
+v1.7.23 Jul 06, 2020
+=====================
+
+* Add node 14.5.0, remove node 14.3.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173598053)
+
+* Add node 12.18.2, remove node 12.17.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173586253)
+
+
+v1.7.22 Jun 16, 2020
+=====================
+
+* Remove Node 13.x due to End of Support
+  See issue #222
+
+
+v1.7.21 Jun 08, 2020
+=====================
+
+* Add node 14.4.0, remove node 14.2.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173138087)
+
+* Add node 12.18.0, remove node 12.16.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173138086)
+
+* Add node 10.21.0, remove node 10.19.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173138083)
+
+
+v1.7.20 May 27, 2020
+=====================
+
+* Add node 12.17.0, remove node 12.16.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/173015868)
+
+* Add node 14.3.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172926901)
+
+
+v1.7.19 May 12, 2020
+=====================
+
+* Add node 14.2.0, remove node 14.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172682634)
+
+* Add node 14.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172653276)
+
+
+v1.7.18 Apr 30, 2020
+=====================
+
+* Add node 13.14.0, remove node 13.11.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172594545)
+  (https://www.pivotaltracker.com/story/show/172318957)
+
+* Add node 12.16.3, remove node 12.16.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172557259)
+
+
+v1.7.17 Apr 13, 2020
+=====================
+
+* Add node 10.20.1, remove node 10.20.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172279103)
+
+* Add node 12.16.2, remove node 12.16.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172233184)
+
+* Add node 10.20.0, remove node 10.18.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172229352)
+
+
+v1.7.16 Apr 01, 2020
+=====================
+
+* Add node 13.12.0, remove node 13.10.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/172013591)
+
+
+v1.7.15 Mar 16, 2020
+=====================
+
+* Add node 13.11.0, remove node 13.8.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171761974)
+
+* Add yarn 1.22.4, remove yarn 1.22.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171703811)
+
+
+v1.7.14 Mar 09, 2020
+=====================
+
+* Add yarn 1.22.2, remove yarn 1.22.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171683622)
+  (https://www.pivotaltracker.com/story/show/171673701)
+
+* Add node 13.10.1, remove node 13.7.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171639591)
+
+
+v1.7.13 Feb 24, 2020
+=====================
+
+* Add node 12.16.1, remove node 12.15.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171339714)
+
+
+v1.7.12 Feb 18, 2020
+=====================
+
+* Add node 12.16.0, remove node 12.14.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171217143)
+
+* correct the flag logic in case of non multibuildpack usage
+
+
+v1.7.11 Feb 10, 2020
+=====================
+
+* Add node 13.8.0, remove node 13.6.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171120776)
+
+* Add node 12.15.0, remove node 12.14.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171120349)
+
+* Add node 10.19.0, remove node 10.18.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171120351)
+
+* Add yarn 1.22.0, remove yarn 1.21.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/171112157)
+
+
+v1.7.10 Feb 03, 2020
+=====================
+
+* Add node 13.7.0, remove node 13.5.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170829605)
+
+* Fixes dynatrace integration tests
+  (https://www.pivotaltracker.com/story/show/169891740)
+
+* Merge pull request #215 from rbamberger/develop
+  Replace GET parameters with headers for requests
+
+* Dynatrace Module Version changed to 1.2.2
+
+* Use latest DT libbuildpack Module
+
+
+v1.7.9 Jan 15, 2020
+====================
+
+* Remove nodejs 8.x.x dependency line
+  (https://www.pivotaltracker.com/story/show/170154276)
+
+* Add node 10.18.1, remove node 10.17.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170636221)
+
+* Add node 13.6.0, remove node 13.3.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170589423)
+
+* Add node 12.14.1, remove node 12.13.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170582839)
+
+
+v1.7.8 Dec 30, 2019
+====================
+
+* Add node 13.5.0, remove node 13.2.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170368048)
+  (https://www.pivotaltracker.com/story/show/170350764)
+
+* Add node 12.14.0, remove node 12.13.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170349768)
+
+* Add node 10.18.0, remove node 10.16.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170349784)
+
+* Add node 8.17.0, remove node 8.16.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170349769)
+
+
+v1.7.7 Dec 16, 2019
+====================
+
+* Add yarn 1.21.1, remove yarn 1.21.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170241478)
+
+
+v1.7.6 Dec 09, 2019
+====================
+
+* Add node 13.3.0, remove node 13.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170089362)
+
+* Add yarn 1.21.0, remove yarn 1.19.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/170044719)
+
+
+v1.7.5 Nov 25, 2019
+====================
+
+* Add Synopsys Seeker support
+  Merge pull request #203 from synopsys-sig/master
+    Seeker Agent integration with pivotal
+
+* Add yarn 1.19.2, remove yarn 1.19.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169916770)
+
+* Add node 13.2.0, remove node 13.0.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169908109)
+
+
+v1.7.4 Nov 21, 2019
+====================
+
+* Add node 12.13.1, remove node 12.11.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169838553)
+
+* Respects the user setting APPDYNAMICS_AGENT_APPLICATION_NAME
+  (https://www.pivotaltracker.com/story/show/169687796)
+
+
+v1.7.3 Nov 11, 2019
+====================
+
+* Add node 13.1.0, remove node 13.0.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169590065)
+
+
+v1.7.2 Oct 31, 2019
+====================
+
+* Add node 13.0.0 (manually)
+  (https://www.pivotaltracker.com/story/show/169295552)
+
+* Add node 13.0.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169349866)
+
+
+v1.7.1 Oct 23, 2019
+====================
+
+* Add node 10.17.0, remove node 10.16.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169300322)
+
+* Add node 12.13.0, remove node 12.12.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169257656)
+
+* Add node 12.12.0, remove node 12.10.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169105958)
+
+v1.7.0 Oct 10, 2019
+=====================
+
+* Add node 8.16.2, remove node 8.16.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169051314)
+
+* Add yarn 1.19.1, remove yarn 1.19.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169010397)
+
+* Add node 12.11.1, remove node 12.9.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168880454)
+
+* Corrects configuration settings to enable AppDynamics agent
+  The appdynamics npm package v4.5.16 introduced 2 undocumented changes
+  that broke the node agent booting process:
+    1. they switched the toggle for choosing to use libagent vs. the Java
+    proxy
+    2. they required an environment variable to be set so that the
+    appdynamics-jre npm package would be installed
+  (https://www.pivotaltracker.com/story/show/168543239)
+
+* Remove cflinuxfs2 dependencies.
+  Fixes #198
+  (https://www.pivotaltracker.com/story/show/166710427)
+
+v1.6.56 Sep 11, 2019
+=====================
+
+* Add node 12.10.0, remove node 12.8.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168299359)
+
+* Configure Contrast Security hook to respond to user provided services
+
+
+v1.6.55 Aug 28, 2019
+=====================
+
+* Remove bson-ext exclusion from brats
+      - Bson-ext now has support for NodeJS 12
+
+* Add node 12.9.1, remove node 12.7.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168120082)
+  (https://www.pivotaltracker.com/story/show/168012844)
+
+v1.6.54 Aug 19, 2019
+=====================
+
+* Add node 8.16.1, remove node 8.15.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167934806)
+
+* Add node 10.16.3, remove node 10.15.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167933824)
+  (https://www.pivotaltracker.com/story/show/167747493)
+  (https://www.pivotaltracker.com/story/show/167631078)
+
+* Add node 12.8.1, remove node 12.6.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167920209)
+  (https://www.pivotaltracker.com/story/show/167747494)
+
+v1.6.53 Jul 25, 2019
+=====================
+
+* Add node 12.7.0, remove node 12.3.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167474840)
+
+* Merge pull request #200 from kanikashah90/deleteAppDynamicsBP
+  Guarding the appdynamics baked-in buildpack with environment variable
+
+* Merge pull request #194 from seymurfarziyev/develop
+  downloaded and installed libbuildpack-dynatrace release v1.2.1
+
+* Add yarn 1.17.3, remove yarn 1.16.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167268056)
+
+* Guarding the appdynamics baked-in buildpack with environment variable
+
+* Downloaded and installed libbuildpack-dynatrace release v1.2.1
+
+
+v1.6.52 Jul 08, 2019
+=====================
+
+* Add node 12.6.0, remove node 12.5.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167069784)
+
+* Pin appdynamics to previously working version
+  (https://www.pivotaltracker.com/story/show/166825935)
+
+* Remove node 11.X.X as it is deprecated
+  (https://www.pivotaltracker.com/story/show/166471531)
+
+* Add node 12.5.0, remove node 12.4.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166957050)
+
+* Add Contrast Security hook
+  (https://www.pivotaltracker.com/story/show/166244737)
+
+* Add node 12.4.0, remove node 12.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166445141)
+
+v1.6.51 May 31, 2019
+=====================
+
+* Use floating version for npm test
+  - We shouldn't depend on any versions for any dependencies
+    in integration tests, except for brats tests
+
+* Add node 10.16.0, remove node 10.15.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166317034)
+
+* Add node 12.3.1, remove node 12.2.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166194213)
+  (https://www.pivotaltracker.com/story/show/166165638)
+
+* Add yarn 1.16.0, remove yarn 1.15.2
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165924485)
+
+* Add node 12.2.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165865903)
+
+
+v1.6.50 May 02, 2019
+=====================
+
+* Add node 11.15.0, remove node 11.13.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165728618)
+
+* Add node 12.1.0, remove node 12.0.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165685981)
+
+
+v1.6.49 Apr 23, 2019
+=====================
+
+* Remove warning logs causing bosh cli error
+
+* Add node 11.14.0, remove node 11.12.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165292190)
+
+* Add node 8.16.0, remove node 8.15.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165399297)
+
+* Change default version of node from 6.x to 10.x
+  (https://www.pivotaltracker.com/story/show/164581167)
+
+* Remove node 6.X.X
+  (https://www.pivotaltracker.com/story/show/164575785)
+
+v1.6.48 Apr 10, 2019
+=====================
+
+* Add node 6.17.1, remove node 6.16.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165104943)
+
+
+v1.6.47 Apr 02, 2019
+=====================
+
+* Add node 11.13.0, remove node 11.10.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164970456)
+
+* Use Ginkgo -mod vendor in unit, integration and brats tests
+  - Update install_tools to always update ginkgo if there is an available update, to pick up Ginkgo 1.8
+  (https://www.pivotaltracker.com/story/show/164548554)
+
+
+v1.6.46 Mar 20, 2019
+=====================
+
+* Add node 11.12.0, remove node 11.10.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164675145)
+  (https://www.pivotaltracker.com/story/show/164443683)
+
+* Add yarn 1.15.2, remove yarn 1.13.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164657895)
+  (https://www.pivotaltracker.com/story/show/164518593)
+
+* Remove all node 9.X.X versions
+  (https://www.pivotaltracker.com/story/show/163601607)
+
+* Adding --no-audit flag to offline buildpack's npm-install
+  (https://www.pivotaltracker.com/story/show/164386481)
+
+* Add node 10.15.3, remove node 10.15.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164408746)
+
+v1.6.45 Mar 04, 2019
+=====================
+
+* Add node 11.10.1, remove node 11.9.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164301719)
+
+* Add node 10.15.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164301704)
+
+* Add node 8.15.1, remove node 8.14.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164301709)
+
+* Add node 6.17.0, remove node 6.15.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164301707)
+
+* Support location on service credentials on the Dynatrace hook Set UserAgent when downloading the agent
+  (https://www.pivotaltracker.com/story/show/164210763)
+
+v1.6.44 Feb 19, 2019
+=====================
+
+* Add node 11.10.0, remove node 11.8.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163995835)
+
+* Fix jq indexing for New Relic integration
+  (https://www.pivotaltracker.com/story/show/163402164)
+
+v1.6.43 Feb 05, 2019
+=====================
+
+* Add node 10.15.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163568677)
+
+* Add node 11.9.0, remove node 11.6.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163608561)
+
+* Update go to 1.11.5 for install_go
+  (https://www.pivotaltracker.com/story/show/163701450)
+
+v1.6.42 Jan 28, 2019
+=====================
+
+* Add node 11.8.0, remove node 11.5.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163473112)
+
+* Use S3-hosted version of go 1.11.4 in online unbuilt/URL buildpack
+  (https://www.pivotaltracker.com/story/show/163089977)
+
+v1.6.41 Jan 17, 2019
+=====================
+
+* Merge pull request #177 from lrgar/release
+  Update libbuildpack-dynatrace
+
+* Add yarn 1.13.0, remove yarn 1.12.3
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163083614)
+
+* Vendor with go modules
+  - Fix performance regression when the buildpack is executed
+    directly from github by re-vendoring source code
+  (https://www.pivotaltracker.com/story/show/162654926)
+
+
+v1.6.40 Jan 08, 2019
+=====================
+
+* Adds support for using an .nvmrc file in an apps home directory to specify the version of node
+  - Note that .nvmrc will only be used if we do not specify the node version in the engines field of package.json
+  (https://www.pivotaltracker.com/story/show/158526860)
+
+
+v1.6.39 Jan 02, 2019
+=====================
+
+* Add node 11.6.0, remove node 11.3.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162847279)
+
+* Add node 10.15.0, remove node 10.14.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162847345)
+
+* Add node 8.15.0, remove node 8.14.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162848337)
+
+* Add node 6.16.0, remove node 6.15.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162848357)
+
+* Use common library for Dynatrace hook - See https://github.com/Dynatrace/libbuildpack-dynatrace - Compared to previous hook implementation:   - If download fails, we try a few more times.   - Default agent output now goes to STDOUT.   - Few other small improvements.
+
+
+v1.6.38 Dec 19, 2018
+=====================
+
+* Add node 8.14.1, remove node 8.13.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162736295)
+
+* Add node 10.14.2, remove node 10.14.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162591556)
+
+* Add node 11.5.0, remove node 11.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162741450)
+
+v1.6.37 Dec 05, 2018
+=====================
+
+* Add node 6.15.1, remove node 6.14.4
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162382561)
+
+* Add node 10.14.1, remove node 10.13.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162314539)
+
+* Display warning when vendored app lacks a package-lock.json
+  - If app is vendored and there's no lock, modules may update
+  (https://www.pivotaltracker.com/story/show/159291499)
+
+v1.6.36 Nov 29, 2018
+=====================
+
+* Add node 10.14.0, remove node 10.12.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162259106)
+
+* Add node 11.3.0, remove node 11.2.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162259097)
+
+* Add node 8.14.0, remove node 8.12.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162259100)
+
+* Add node 6.15.0, remove node 6.14.3
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162259098)
+
+* Add node 11.2.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162088427)
+
+
+v1.6.35 Nov 20, 2018
+=====================
+
+* Add node 8.13.0, remove node 8.11.4
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162096699)
+
+* Add node 10.13.0, remove node 10.10.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161581085)
+
+* Add node 11.1.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161677942)
+
+* Add yarn 1.12.3, remove yarn 1.12.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161784171)
+
+* Update dependency deprecation dates for nodejs 10.X and 11.X
+  (https://www.pivotaltracker.com/story/show/161427586)
+
+* Merge pull request #169 from snyk-partners/snyk-fix-parameter-delivery
+  fix parameter delivery in snyk hook
+
+* Merge pull request #168 from dtran808/patch-1
+  remove extraneous escape
+
+v1.6.34 Oct 29, 2018
+=====================
+
+* Add yarn 1.12.1, remove yarn 1.10.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161522145)
+
+* Add severity-threshold cli param for Snyk.
+  - Merge pull request #160 from snyk-partners:feat/add-severity-threshold
+  (https://www.pivotaltracker.com/story/show/161366380)
+
+v1.6.33 Oct 15, 2018
+=====================
+
+* Add node 10.12.0, remove node 10.9.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161135486)
+  (https://www.pivotaltracker.com/story/show/160650768)
+
+* Add node 8.12.0, remove node 8.11.3
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/160409649)
+
+* Add yarn 1.10.1, remove yarn 1.9.4
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/160793556)
+  (https://www.pivotaltracker.com/story/show/160793489)
+
+* Will not move artifacts if using yarn workspaces to prevent breaking symlinks.
+  (https://www.pivotaltracker.com/story/show/159391932)
+
+v1.6.32 Sep 10, 2018
+=====================
+
+* Add node 10.10.0, remove node 10.7.0
+  (https://www.pivotaltracker.com/story/show/160334231)
+
+* Bugfix for Snyk hook
+  (https://www.pivotaltracker.com/story/show/160155740)
+
+v1.6.31 Aug 24, 2018
+=====================
+
+* Add node 10.9.0, remove node 10.5.0
+  (https://www.pivotaltracker.com/story/show/159814062)
+  (https://www.pivotaltracker.com/story/show/159478290)
+
+* Add node 8.11.4, remove node 8.11.2
+  (https://www.pivotaltracker.com/story/show/159814061)
+
+* Add node 6.14.4, remove node 6.14.2
+  (https://www.pivotaltracker.com/story/show/159814060)
+
+* Add yarn 1.9.4, remove yarn 1.7.0
+  (https://www.pivotaltracker.com/story/show/159534896)
+  (https://www.pivotaltracker.com/story/show/159533350)
+
+v1.6.30 Jul 27, 2018
+=====================
+
+* Rebuild node 6.14.3, 8.11.3, 9.11.2, 10.7.0
+  for stacks cflinuxfs3, cflinuxfs3 [#159252754]
+
+* Rebuild yarn 1.7.0
+  for stacks cflinuxfs2, cflinuxfs3 [#159252393]
+
+v1.6.29 Jul 19, 2018
+=====================
+
+* Add node 10.7.0, remove node 10.4.1
+  (https://www.pivotaltracker.com/story/show/159150931)
+  (https://www.pivotaltracker.com/story/show/158826642)
+
+v1.6.28 Jul 02, 2018
+=====================
+
+* Remove node 4 everywhere
+  (https://www.pivotaltracker.com/story/show/157283396)
+
+v1.6.27 Jun 25, 2018
+=====================
+
+* Add node 10.5.0, remove node 10.3.0
+  (https://www.pivotaltracker.com/story/show/158503889)
+
+v1.6.26 Jun 14, 2018
+=====================
+
+* Add node 6.14.3, 8.11.3, 9.11.2, 10.4.1, Remove node 6.14.1, 8.11.1, 9.9.0, 10.1.0
+  (https://www.pivotaltracker.com/story/show/158314054)
+  (https://www.pivotaltracker.com/story/show/158314054)
+  (https://www.pivotaltracker.com/story/show/158314054)
+  (https://www.pivotaltracker.com/story/show/158314054)
+
+v1.6.25 Jun 05, 2018
+=====================
+
+* Add node 10.3.0, remove node 10.0.0
+  (https://www.pivotaltracker.com/story/show/157945224)
+
+* Add node 8.11.2, remove node 8.10.0
+  (https://www.pivotaltracker.com/story/show/157613971)
+
+* Add yarn 1.7.0, remove yarn 1.6.0
+  (https://www.pivotaltracker.com/story/show/157827921)
+
+v1.6.24 May 15, 2018
+=====================
+
+* Add node 10.1.0
+  source url: https://nodejs.org/dist/v10.1.0/node-v10.1.0.tar.gz
+  source sha256: e4b5a1d9fac4b20b5421afe34108867df359c69c4c4e2ad6e2bd75b113ddf0db
+  (https://www.pivotaltracker.com/story/show/157417041)
+
+* Create symlink between buildDir node_modules and depsDir node_modules
+  - Only create the symlink if node_modules are not vendored
+  (https://www.pivotaltracker.com/story/show/157388016)
+
+* Add node 6.14.2, remove node 6.13.1
+  source url: https://nodejs.org/dist/v6.14.2/node-v6.14.2.tar.gz
+  source sha256: 418901524257a2750930d659b3b9f8b8bb0b166974ab2103192270f80bd5f677
+  (https://www.pivotaltracker.com/story/show/157199825)
+
+v1.6.23 Apr 26, 2018
+=====================
+
+* Always set NODE_PATH to node_modules location
+  (https://www.pivotaltracker.com/story/show/156828428)
+
+* Set max_old_space_size when OPTIMIZE_MEMORY=true
+  - Remove --always_compact and --optimize_for_size as they are no longer valid node options
+  (https://www.pivotaltracker.com/story/show/155192314)
+
+* Add node 10.0.0
+  (https://www.pivotaltracker.com/story/show/157065173)
+
+* Add yarn 1.6.0, remove yarn 1.5.1
+  (https://www.pivotaltracker.com/story/show/156786250)
+
+v1.6.22 Apr 12, 2018
+=====================
+
+* Install node_modules in the build directory
+  Running npm/yarn install in the build directory ensures custom scripts are run in that directory
+  (https://www.pivotaltracker.com/story/show/156364507)
+
+* Add node 9.11.1, remove node 9.8.0
+  (https://www.pivotaltracker.com/story/show/156531449)
+  (https://www.pivotaltracker.com/story/show/156350231)
+
+* Add node 8.11.1, remove node 8.9.4
+  (https://www.pivotaltracker.com/story/show/156394483)
+  (https://www.pivotaltracker.com/story/show/156350231)
+
+* Add node 6.14.1, remove node 6.13.0
+  (https://www.pivotaltracker.com/story/show/156394483)
+  (https://www.pivotaltracker.com/story/show/156350231)
+
+* Add node 4.9.1, remove node 4.8.6
+  (https://www.pivotaltracker.com/story/show/156394483)
+  (https://www.pivotaltracker.com/story/show/156350231)
+
+v1.6.21 Mar 21, 2018
+=====================
+
+* Add node 9.9.0, remove node 9.6.1
+  (https://www.pivotaltracker.com/story/show/156166012)
+
+* Ensure app directory is not modified in supply phase
+  (https://www.pivotaltracker.com/story/show/155602498)
+
+* Remove symlink in vendored yarn fixture
+  (https://www.pivotaltracker.com/story/show/155602498)
+
+v1.6.20 Mar 09, 2018
+=====================
+
+* Uncached buildpacks now cache manifest.yml dependencies
+  - cache package only deletes its own directories
+  (https://www.pivotaltracker.com/story/show/155405429)
+
+* Add node 9.8.0, remove node 9.5.0
+  (https://www.pivotaltracker.com/story/show/155804707)
+  (https://www.pivotaltracker.com/story/show/155618737)
+
+* Add node 8.10.0, remove node 8.9.3
+  (https://www.pivotaltracker.com/story/show/155765642)
+
+* Add node 6.13.1, remove node 6.12.3
+  (https://www.pivotaltracker.com/story/show/155758175)
+
+* Add yarn 1.5.1, remove yarn 1.3.2
+  (https://www.pivotaltracker.com/story/show/155546203)
+
+v1.6.19 Feb 26, 2018
+=====================
+
+* Add yarn 1.3.2, remove yarn 1.2.1
+  (https://www.pivotaltracker.com/story/show/155490241)
+
+* Add Node 9.5.0, remove 9.6.0
+  We did not release 9.6.0 so keep 9.5.0
+  (https://www.pivotaltracker.com/story/show/155456835)
+
+* Add node 9.6.1, remove node 9.5.0
+  (https://www.pivotaltracker.com/story/show/155456835)
+
+* Add node 9.6.0, remove node 9.4.0
+  (https://www.pivotaltracker.com/story/show/155440073)
+
+v1.6.18 Feb 20, 2018
+=====================
+
+* Add node 6.13.0, remove node 6.12.2
+  (https://www.pivotaltracker.com/story/show/155196463)
+
+* Add support for custom api url and snyk org
+  (https://www.pivotaltracker.com/story/show/155181393)
+
+v1.6.17 Feb 09, 2018
+=====================
+
+* Enable manifest override yml
+  (https://www.pivotaltracker.com/story/show/153614649)
+
+* Add node 9.5.0, remove node 9.3.0
+  (https://www.pivotaltracker.com/story/show/154826768)
+
+* changing $PREBUILD invalidates the cache
+  (https://www.pivotaltracker.com/story/show/146161295)
+
+v1.6.16 Jan 29, 2018
+=====================
+
+* Add Snyk hook
+  (https://www.pivotaltracker.com/story/show/154521661)
+
+* Bugfix for Dynatrace hook
+  (https://www.pivotaltracker.com/story/show/154240737)
+
+v1.6.15 Jan 16, 2018
+=====================
+
+* Add node 9.4.0, remove node 9.2.1
+  (https://www.pivotaltracker.com/story/show/154214571)
+
+* Add node 8.9.4, remove node 8.9.1
+  (https://www.pivotaltracker.com/story/show/154014103)
+
+* Add node 6.12.3, remove node 6.12.0
+  (https://www.pivotaltracker.com/story/show/154004430)
+
+v1.6.14 Dec 20, 2017
+=====================
+
+* Set Default node to 6.x and remove node 7.x
+  (https://www.pivotaltracker.com/story/show/152620013)
+
+* Add node 9.3.0, remove node 9.2.0
+  (https://www.pivotaltracker.com/story/show/153611647)
+
+v1.6.13 Dec 12, 2017
+=====================
+
+* Add node 8.9.3, remove node 8.9.0
+  (https://www.pivotaltracker.com/story/show/153516409)
+  (https://www.pivotaltracker.com/story/show/153425484)
+
+* Add node 9.2.1, remove node 9.1.0
+  (https://www.pivotaltracker.com/story/show/153516409)
+
+* Add node 4.8.7, remove node 4.8.5
+  (https://www.pivotaltracker.com/story/show/153514063)
+
+* Add node 6.12.2, remove node 6.11.5
+  (https://www.pivotaltracker.com/story/show/153514063)
+  (https://www.pivotaltracker.com/story/show/153407348)
+
+v1.6.12 Nov 21, 2017
+=====================
+
+* User Provided Services can have name containing 'appdynamics' or 'app-dynamics'
+  Service Brokers are always named 'appdynamics'
+  - Merge pull request #106 from kpschuck/develop
+  (https://www.pivotaltracker.com/story/show/152258548)
+
+* Add node 9.2.0, remove node 9.0.0
+  (https://www.pivotaltracker.com/story/show/152870080)
+
+* Supports Newrelic via user provided service
+  - Merge pull request #111 from jkschoen/newrelic
+  (https://www.pivotaltracker.com/story/show/152608357)
+
+* Add node 8.9.1, remove node 8.8.0
+  (https://www.pivotaltracker.com/story/show/152660369)
+
+* Add node 9.1.0
+  (https://www.pivotaltracker.com/story/show/152651070)
+
+* Add node 4.8.6, remove node 4.8.4
+  (https://www.pivotaltracker.com/story/show/152648755)
+
+* Add node 6.12.0, remove node 6.11.4
+  (https://www.pivotaltracker.com/story/show/152648755)
+
+* Use a TLS proxy for HTTPS_PROXY so yarn 1.3.x won't ignore it
+  Add yarn 1.3.2, Remove yarn 1.2.1
+  (https://www.pivotaltracker.com/story/show/152521469)
+
+v1.6.11 Nov 06, 2017
+=====================
+
+* Build node with "--use-openssl-ca" to enable system store
+  (https://www.pivotaltracker.com/story/show/152254480)
+
+* Add node 9.0.0
+  (https://www.pivotaltracker.com/story/show/152452241)
+
+* Add node 8.9.0, remove node 8.7.0
+  (https://www.pivotaltracker.com/story/show/152449876)
+  (https://www.pivotaltracker.com/story/show/152301847)
+
+* Verify dependency downloads using sha256 instead of md5
+  (https://www.pivotaltracker.com/story/show/151913767)
+
+v1.6.10 Oct 25, 2017
+=====================
+
+* Add node 4.8.5, remove node 4.8.3
+  (https://www.pivotaltracker.com/story/show/152260475)
+
+* Add node 6.11.5, remove node 6.11.3
+  (https://www.pivotaltracker.com/story/show/152260475)
+
+* Add node 8.8.0, remove node 8.6.0
+  (https://www.pivotaltracker.com/story/show/152260475)
+
+* Added hooks for dynatrace
+  - Merge pull request #109 from arthfl/develop
+
+
+v1.6.9 Oct 17, 2017
+====================
+
+* Add yarn 1.2.1, remove yarn 1.2.0
+  (https://www.pivotaltracker.com/story/show/151912328)
+
+* Add node 8.7.0, remove node 8.5.0
+  (https://www.pivotaltracker.com/story/show/151897906)
+
+* Add yarn 1.2.0, remove yarn 1.1.0
+  (https://www.pivotaltracker.com/story/show/151833736)
+
+* Add node 6.11.4, remove node 6.11.2
+  (https://www.pivotaltracker.com/story/show/151659499)
+
+v1.6.8 Oct 03, 2017
+====================
+
+* Add node 8.6.0, remove node 8.4.0
+  (https://www.pivotaltracker.com/story/show/151551566)
+
+* Add yarn 1.1.0, remove yarn 1.0.2
+  (https://www.pivotaltracker.com/story/show/151359400)
+
+v1.6.7 Sep 15, 2017
+====================
+
+* Match NPM version in package.json using semver constraints
+  (https://www.pivotaltracker.com/story/show/146165559)
+
+* Add node 8.5.0, remove node 8.3.0
+  (https://www.pivotaltracker.com/story/show/151013555)
+
+* Add node 8.4.0, remove node 8.2.1
+  (https://www.pivotaltracker.com/story/show/150276935)
+
+* Add node 6.11.3, remove node 6.11.1
+  (https://www.pivotaltracker.com/story/show/150824934)
+
+* Add yarn 1.0.2, remove yarn 0.27.5
+  (https://www.pivotaltracker.com/story/show/151059801)
+  (https://www.pivotaltracker.com/story/show/150886385)
+  (https://www.pivotaltracker.com/story/show/150856905)
+
+v1.6.6 Aug 14, 2017
+====================
+
+* Add node 8.3.0, remove node 8.2.0
+  (https://www.pivotaltracker.com/story/show/150120007)
+
+v1.6.5 Aug 01, 2017
+====================
+
+* Add node 6.11.2, remove node 6.11.0
+  (https://www.pivotaltracker.com/story/show/149837609)
+
+* Fix bug: error pushing Node 6.11.1 app to cloud foundry using buildpack 1.6.2
+  (https://www.pivotaltracker.com/story/show/149549527)
+
+* Move installation of modules from finalize to supply
+  (https://www.pivotaltracker.com/story/show/149435525)
+
+* Make bundler binstubs easy to use
+
+v1.6.4 Jul 24, 2017
+====================
+
+* Fix error with bufio.Scanner when contents of files overruns buffer
+  - Merge pull request #96 from mainephd/master
+
+* Add node 8.2.1, remove node 8.1.3
+  (https://www.pivotaltracker.com/story/show/149272693)
+  (https://www.pivotaltracker.com/story/show/149199689)
+
+v1.6.3 Jul 18, 2017
+====================
+
+* Handle wider version range syntaxes, eg. ">=6.11.1 <7.0"
+  (https://www.pivotaltracker.com/story/show/149087771)
+
+v1.6.2 Jul 12, 2017
+====================
+
+* Merge pull request #94 from paulbeattie/master
+  Fix `WEB_CONCURRENCY` and `WEB_MEMORY` from being overwritten at runtime
+
+* Add node 4.8.4, 6.11.1, 7.10.1, and 8.1.4; remove node 4.8.2, 6.10.3, 7.9.0, and 8.1.2
+  (https://www.pivotaltracker.Vcom/story/show/148684925)
+  (https://www.pivotaltracker.com/story/show/148684925)
+  (https://www.pivotaltracker.com/story/show/148684925)
+  (https://www.pivotaltracker.com/story/show/148684925)
+
+v1.6.1 Jul 10, 2017
+====================
+
+* Add yarn 0.27.5, remove yarn 0.24.6
+  (https://www.pivotaltracker.com/story/show/148175165)
+  (https://www.pivotaltracker.com/story/show/148169407)
+  (https://www.pivotaltracker.com/story/show/148107277)
+  (https://www.pivotaltracker.com/story/show/147751911)
+
+* Add node 8.1.3, remove node 8.1.1
+  (https://www.pivotaltracker.com/story/show/148055013)
+
+v1.6.0 Jun 22, 2017
+=====================
+
+* Add node 8.1.2
+  (https://www.pivotaltracker.com/story/show/147264673)
+
+* Add node 8.1.1, remove node 8.0.0
+  (https://www.pivotaltracker.com/story/show/147158713)
+
+* Add node 6.11.0, remove node 6.10.2
+  (https://www.pivotaltracker.com/story/show/146731549)
+
+* Use MEMORY_AVAILABLE environment value for mem limit
+
+* Convert to libbuildpack for greater consistency across core buildpacks
+  (https://www.pivotaltracker.com/story/show/145065635)
+
+* Amend license, and fix readme links
+  (https://www.pivotaltracker.com/story/show/147439591)
+  (https://www.pivotaltracker.com/story/show/147615323)
+
+v1.5.36 Jun 05, 2017
+=====================
+
+* Add node 8.0.0
+  (https://www.pivotaltracker.com/story/show/146317727)
+
+v1.5.35 May 30, 2017
+=====================
+
+* Set MEMORY_AVAILABLE, WEB_MEMORY, WEB_CONCURRENCY
+  (https://www.pivotaltracker.com/story/show/146183269)
+
+* Set NODE_ENV for production
+  (https://www.pivotaltracker.com/story/show/146183269)
+
+* Add yarn 0.24.6, remove yarn 0.24.4
+  (https://www.pivotaltracker.com/story/show/145961345)
+  (https://www.pivotaltracker.com/story/show/145469419)
+
+* Add flag "OPTIMIZE_MEMORY=true" to turn max_old_space_size on
+  (https://www.pivotaltracker.com/story/show/143873083)
+
+v1.5.34 May 15, 2017
+=====================
+
+* Add yarn 0.24.4, remove yarn 0.23.4
+  (https://www.pivotaltracker.com/story/show/145364383)
+  (https://www.pivotaltracker.com/story/show/145350573)
+
+* Add EOL links for node
+  (https://www.pivotaltracker.com/story/show/144943203)
+
+* Fix NODE_HOME env var
+  (https://www.pivotaltracker.com/story/show/142852389)
+
+* Fix misleading jq error messges
+  (https://www.pivotaltracker.com/story/show/145044169)
+
+* Fix multi-buildpack support in tasks
+  (https://www.pivotaltracker.com/story/show/144964891)
+
+v1.5.33 May 03, 2017
+=====================
+
+* Add node 7.10.0, remove node 7.8.0
+  (https://www.pivotaltracker.com/story/show/144784587)
+
+* Add node 7.9.0, remove node 7.7.4
+  (https://www.pivotaltracker.com/story/show/143534007)
+
+* Add node 6.10.3, remove node 6.10.1
+  (https://www.pivotaltracker.com/story/show/144725819)
+
+* Add node 4.8.3, remove node 4.8.1
+  (https://www.pivotaltracker.com/story/show/144719795)
+
+* Add yarn 0.23.4, remove yarn 0.22.0
+  (https://www.pivotaltracker.com/story/show/144725823)
+  (https://www.pivotaltracker.com/story/show/143255621)
+
+* Add Multi Buildpack support
+  (https://www.pivotaltracker.com/story/show/141616657)
+
+* Ensure yarn install does not reach out to internet
+  (https://www.pivotaltracker.com/story/show/142334089)
+
+* Use correct package manager in unmet deps warning
+  (https://www.pivotaltracker.com/story/show/143837939)
+
+* Add Appdynamics support
+  (https://www.pivotaltracker.com/story/show/143585835)
+
+v1.5.32 Apr 04, 2017
+=====================
+
+* Add node 4.8.2, remove node 4.8.0
+  (https://www.pivotaltracker.com/story/show/143029841)
+
+* Add node 6.10.2, remove node 6.10.0
+  (https://www.pivotaltracker.com/story/show/143029841)
+
+* Add node 7.8.0, remove node 7.7.3
+  (https://www.pivotaltracker.com/story/show/142657575)
+
+
+v1.5.31 Mar 27, 2017
+=====================
+
+* Add node 4.8.1, Remove node 4.7.3
+  - Set Node 4.8.1 as the default
+  (https://www.pivotaltracker.com/story/show/142185261)
+
+* Add node 6.10.1, remove node 6.9.5
+  (https://www.pivotaltracker.com/story/show/142185261)
+
+* Add node 7.7.3, remove node 7.5.0
+  (https://www.pivotaltracker.com/story/show/141738953)
+
+* Add node 7.7.4, Remove node 7.6.0
+  (https://www.pivotaltracker.com/story/show/142188245)
+  (https://www.pivotaltracker.com/story/show/141360971)
+
+* Add yarn 0.22.0, remove yarn 0.21.2
+  (https://www.pivotaltracker.com/story/show/141155101)
+  (https://www.pivotaltracker.com/story/show/140681333)
+
+* Add support for supply buildpacks
+  (https://www.pivotaltracker.com/story/show/141616657)
+
+* Use pessimistic locking on ruby version in Gemfile
+  (https://www.pivotaltracker.com/story/show/140770891)
+
+v1.5.30 Feb 27, 2017
+=====================
+
+* Add node 7.6.0 remove node 7.4.0
+  (https://www.pivotaltracker.com/story/show/140375739)
+
+* Add node 6.10.0 remove node 6.9.4
+  (https://www.pivotaltracker.com/story/show/140375739)
+
+* Add node 4.8.0 remove node 4.7.2
+  (https://www.pivotaltracker.com/story/show/140373175)
+
+* Add yarn 0.21.2, remove yarn 0.20.0
+  (https://www.pivotaltracker.com/story/show/139882371)
+
+v1.5.29 Feb 07, 2017
+=====================
+
+* Add EOL dates for node
+  (https://www.pivotaltracker.com/story/show/137288317)
+
+* Add node 7.5.0, remove node 7.3.0
+  (https://www.pivotaltracker.com/story/show/138780181)
+
+* Add node 6.9.5, remove node 6.9.3
+  (https://www.pivotaltracker.com/story/show/138771375)
+
+* Add node 4.7.3, remove node 4.7.1
+  (https://www.pivotaltracker.com/story/show/138773607)
+
+* Add yarn 0.20.0, remove yarn 0.19.1
+  (https://www.pivotaltracker.com/story/show/138614091)
+
+v1.5.28 Jan 24, 2017
+=====================
+
+* Remove node 0.12.x version line
+  (https://www.pivotaltracker.com/story/show/136591333)
+
+* Remove node 5.x version line
+  (https://www.pivotaltracker.com/story/show/136591333)
+
+* Add yarn 0.19.1, remove yarn 0.19.0
+  (https://www.pivotaltracker.com/story/show/138003527)
+
+* Add yarn to cached buildpack
+  (https://www.pivotaltracker.com/story/show/136510177)
+
+v1.5.27 Jan 10, 2017
+=====================
+
+* Catch excecptions from buildpack version warning scripts
+  - Under some non-standard CF deployment configurations, it was possible for these scripts to
+  error out. As they are purely informative, this should never happen.
+  (https://www.pivotaltracker.com/story/show/137351597)
+
+v1.5.26 Jan 09, 2017
+=====================
+
+* Add warning if downloaded dependency is not the latest patch version for a
+given major and minor version
+  (https://www.pivotaltracker.com/story/show/134863437)
+
+* Add new version warning to nodejs buildpack
+  (https://www.pivotaltracker.com/story/show/135234395)
+
+* Yarn support added, activated if yarn.lock file present
+  (https://www.pivotaltracker.com/story/show/136345251)
+
+* Add node 7.4.0, remove node 7.2.1
+  (https://www.pivotaltracker.com/story/show/137044385)
+
+* Add node 7.3.0, remove node 7.2.0
+  (https://www.pivotaltracker.com/story/show/136461121)
+
+* Add node 6.9.4, remove node 6.9.2
+  (https://www.pivotaltracker.com/story/show/137135283)
+
+* Add node 6.9.3, remove node 6.9.1
+  (https://www.pivotaltracker.com/story/show/136991485)
+
+* Add node 4.7.2, remove node 4.7.0
+  (https://www.pivotaltracker.com/story/show/137135283)
+
+* Add node 4.7.1, remove node 4.6.2
+  (https://www.pivotaltracker.com/story/show/136994135)
+
+* Add node 0.12.18, remove node 0.12.16
+  (https://www.pivotaltracker.com/story/show/136501265)
+
+v1.5.25 Dec 15, 2016
+=====================
+
+* Add node 7.2.1, remove node 7.1.0
+  (https://www.pivotaltracker.com/story/show/135658433)
+
+* Add node 6.9.2, remove node 6.9.0
+  (https://www.pivotaltracker.com/story/show/135643989)
+
+* Add node 4.7.0, remove node 4.6.1
+  (https://www.pivotaltracker.com/story/show/135648535)
+
+v1.5.24 Dec 01, 2016
+=====================
+
+* Add node 7.2.0, remove node 7.0.0
+  (https://www.pivotaltracker.com/story/show/134823269)
+
+* Provide a "protip" when Node.js modules are not vendored
+  (https://www.pivotaltracker.com/story/show/116369631)
+
+* Rebuild and change path for node binaries
+  - We identified a potential, but unlikely, attack vector in our continuous
+    integration system. Our own auditing strongly suggests that this attack
+    vector was not taken advantage of. However, out of an abundance of caution,
+    we are rebuilding all buildpack dependencies that we maintain.
+
+v1.5.23 Nov 09, 2016
+=====================
+
+* Add node 7.1.0
+  (https://www.pivotaltracker.com/story/show/133966203)
+
+* Add node 7.0.0
+  (https://www.pivotaltracker.com/story/show/133105865)
+
+* Add node 6.9.1, remove node 6.8.1
+  (https://www.pivotaltracker.com/story/show/132796533)
+
+* Add node 4.6.2, remove node 4.6.0
+  (https://www.pivotaltracker.com/story/show/133955125)
+
+* Remove node 0.10.47 and 0.10.48
+  - Node.js 0.10.x support ends on October 31st, 2016
+  - Node.js 0.10.x will no longer be in the nodejs-buildpack
+  (https://www.pivotaltracker.com/story/show/132026695)
+
+* Ensure all downloaded binaries have checksums verified
+  (https://www.pivotaltracker.com/story/show/128099189)
+
+* Remove vendored node binary executable
+  (https://www.pivotaltracker.com/story/show/128498051)
+
+v1.5.22 Oct 19, 2016
+=====================
+
+* Add node 6.9.0 and 6.8.1, remove node 6.6.0 and 6.7.0
+  (https://www.pivotaltracker.com/story/show/132362527)
+  (https://www.pivotaltracker.com/story/show/132362087)
+  (https://www.pivotaltracker.com/story/show/132198199)
+  (https://www.pivotaltracker.com/story/show/132691907)
+
+* Add node 0.10.48, remove node 0.10.46
+  (https://www.pivotaltracker.com/story/show/132686391)
+
+* Add node 0.12.17, remove node 0.12.15
+  (https://www.pivotaltracker.com/story/show/132686391)
+
+* Add node 4.6.1, remove node 4.5.0
+  (https://www.pivotaltracker.com/story/show/132686391)
+
+* Address USN-3087-1: OpenSSL vulnerabilities with node 6.8.1 and 6.9.0
+  (https://www.pivotaltracker.com/story/show/130992485)
+
+* NOTICE: Node.js 0.10 will be removed after October 31, 2016 due to end of LTS
+  (https://www.pivotaltracker.com/story/show/132026695)
+
+v1.5.21 Sep 28, 2016
+=====================
+
+* Address USN-3087-1: OpenSSL vulnerabilities by updating node.
+  The new versions of node included in this buildpack are built
+  against the patched version of OpenSSL
+  (https://www.pivotaltracker.com/story/show/130945067)
+
+* Add node 0.10.47, remove node 0.10.45
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+* Add node 0.12.16, remove node 0.12.14
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+* Add node 4.6.0, remove node 4.4.7
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+* Add node 6.7.0, remove node 6.5.0
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+v1.5.20 Sep 19, 2016
+=====================
+
+* Add node 6.6.0, remove node 6.4.0
+  (https://www.pivotaltracker.com/story/show/130488207)
+
+* Remove Heroku references from staging output
+  (https://www.pivotaltracker.com/story/show/127931269)
+
+v1.5.19 Sep 01, 2016
+=====================
+
+* Add node 4.5.0, remove node 4.4.6
+  (https://www.pivotaltracker.com/story/show/128431641)
+
+* Add node 6.4.0, remove node 6.3.0
+  (https://www.pivotaltracker.com/story/show/128863283)
+
+* Add node 6.5.0, remove node 6.3.1
+  (https://www.pivotaltracker.com/story/show/129366607)
+
+* Add support for New Relic configuration through service binding
+  (https://www.pivotaltracker.com/story/show/110040634)
+
+* Filter credentials from dependency urls printed during staging
+  (https://www.pivotaltracker.com/story/show/126514693)
+
+* Add default_versions support for specifying node default version
+  (https://www.pivotaltracker.com/story/show/126394943)
+
+v1.5.18 Jul 25, 2016
+=====================
+
+* Add nodejs 6.3.1, remove nodejs 6.2.2
+  (https://www.pivotaltracker.com/story/show/126830705)
+
+v1.5.17 Jul 15, 2016
+=====================
+
+* Make buildpacks.cloudfoundry.org the default url for buildpack dependencies
+  (https://www.pivotaltracker.com/story/show/121757949)
+
+* Update node to 4.4.7
+  (https://www.pivotaltracker.com/story/show/123264921)
+
+* Update node to 6.3.0
+  (https://www.pivotaltracker.com/story/show/125266811)
+
+v1.5.16 Jun 28, 2016
+=====================
+
+* Add nodejs 0.10.46, remove nodejs 0.10.44
+  (https://www.pivotaltracker.com/story/show/122177127)
+
+* Add nodejs 0.12.15, remove nodejs 0.12.13
+  (https://www.pivotaltracker.com/story/show/122177127)
+
+* Add nodejs 4.4.6, remove nodejs 4.4.4
+  (https://www.pivotaltracker.com/story/show/122177127)
+
+* Add nodejs 5.12.0, remove nodejs 5.10.1
+  (https://www.pivotaltracker.com/story/show/122177127)
+
+* Add nodejs 6.2.2. Remove nodejs 6.2.0
+  (https://www.pivotaltracker.com/story/show/121759045)
+
+v1.5.15 Jun 08, 2016
+=====================
+
+* Add nodejs 6.2.0 and 6.2.1, remove nodejs 6.0.0 and 6.1.0
+  (https://www.pivotaltracker.com/story/show/120806559)
+  (https://www.pivotaltracker.com/story/show/119775517)
+
+* Add nodejs 4.4.5, remove nodejs 4.4.3
+  (https://www.pivotaltracker.com/story/show/120225945)
+
+* Add a helpful error message for case where npm fails to download
+  (https://www.pivotaltracker.com/story/show/118775597)
+
+v1.5.14 May 06, 2016
+=====================
+
+* Bump versions of nodejs to address openssl vulnerabilities
+
+  More information can be found here
+  https://nodejs.org/en/blog/vulnerability/openssl-may-2016/
+
+  Version changes:
+
+  - Replace 0.10.43 with 0.10.45
+  - Replace 0.12.12 with 0.12.14
+  - Replace 4.4.2 with 4.4.4
+  - Replace 5.11.0 with 5.11.1
+  - Add 6.1.0
+
+  (https://www.pivotaltracker.com/story/show/119080687)
+  (https://www.pivotaltracker.com/story/show/119053109)
+  (https://www.pivotaltracker.com/story/show/119050895)
+  (https://www.pivotaltracker.com/story/show/119055011)
+
+v1.5.13 Apr 27, 2016
+=====================
+
+* Add nodejs 6.0.0
+
+  Note that many node packages do not yet and possibly will not support the node 6 series
+
+  Ex. bson_ext is not compatible with v8 and node 6: https://github.com/christkv/bson-ext/issues/28#issuecomment-212258411
+
+  (https://www.pivotaltracker.com/story/show/118424939)
+
+* Fix bug where versions with an odd minor semver portion get filtered out
+  during version resolution
+  (https://www.pivotaltracker.com/story/show/118436661)
+
+* Add nodejs 5.11.0, Remove 5.10.0
+  (https://www.pivotaltracker.com/story/show/118134235)
+
+v1.5.12 Apr 19, 2016
+=====================
+
+* Add nodejs 4.4.3
+  (https://www.pivotaltracker.com/story/show/117495347)
+
+v1.5.11 Apr 11, 2016
+=====================
+
+* Add node 5.10.1
+  (https://www.pivotaltracker.com/story/show/117023173)
+
+v1.5.10 Apr 05, 2016
+=====================
+
+* Add nodejs 0.12.13, 0.10.44, 4.4.2, 5.10.0, remove nodejs 0.12.11,
+  0.10.42, 4.4.1, 5.9.1
+  (https://www.pivotaltracker.com/story/show/116741361)
+
+v1.5.9 Mar 30, 2016
+====================
+
+* Add nodejs 4.4.1 and 5.9.1, remove nodejs 4.4.0 and 5.9.0
+  (https://www.pivotaltracker.com/story/show/116416441)
+
+* Improve error messaging for unsupported versions and unable to resolve version strings
+  (https://www.pivotaltracker.com/story/show/115735397)
+
+* Specified location of native module headers for npm rebuild command. Fixes [#115780623]
+  (https://www.pivotaltracker.com/story/show/115735397)
+
+* Add nodejs 5.9.0, remove 5.8.0
+  (https://www.pivotaltracker.com/story/show/116036807)
+
+* set stable release for nodejs to latest 4.x
+  (https://www.pivotaltracker.com/story/show/115599647)
+
+
+v1.5.8 Mar 14, 2016
+====================
+
+* Add v0.12.12, v4.4.0, and v5.8.0, removed v0.12.10, v4.3.2, and v5.7.1
+  (https://www.pivotaltracker.com/story/show/114974911)
+
+* Revert upstream pre/post build scripts
+  (https://www.pivotaltracker.com/story/show/1115592677)
+
+* Remove old log message about resolving version via semver.io
+  (https://www.pivotaltracker.com/story/show/114725733)
+
+v1.5.7 Mar 04, 2016
+====================
+
+* Add v0.12.11 and v0.10.43, removed v0.12.09 and v0.10.41
+  (https://www.pivotaltracker.com/story/show/114974911)
+
+* Added v4.3.2 and v5.7.1, removed v5.7.0 and v4.3.1
+  (https://www.pivotaltracker.com/story/show/114951809)
+
+v1.5.6 Feb 29, 2016
+====================
+* Add node versions v0.12.10, v0.10.42, v4.3.1, v5.7.0
+
+  * Remove node versions v0.12.7, v0.10.40, v4.2.5, v5.5.0
+  (https://pivotaltracker.com/story/show/114348831)
+
+* Merge remote-tracking branch 'upstream/master' into develop
+  (https://github.com/cloudfoundry/nodejs-buildpack/commit/6fd264ec732bac5f8cceb86f733457a65ef351b0)
+  * Merge pull request #286 from afeld/patch-1
+
+  * use HTTPS for downloading Node
+
+v1.5.5 Jan 26, 2016
+====================
+
+* Added v4.2.5 and v5.5.0, removed v4.2.3 and v5.1.1.
+  (https://www.pivotaltracker.com/story/show/111537310)
+
+* Remove node 0.11.15 and 0.11.16
+  (https://www.pivotaltracker.com/story/show/109538496)
+
+v1.5.4 Dec 04, 2015
+====================
+
+* Add support for Node 0.10.41, 0.12.9, 4.2.3, and 5.1.1
+* Remove support for Node 0.10.38, 0.12.6, and 4.2.2
+  (https://www.pivotaltracker.com/story/show/109526542)
+
+v1.5.3 Nov 16, 2015
+====================
+
+* Developers are given detailed, helpful instructions when they attempt
+  to stage an application whose dependency is not found in the manifest.
+  (https://www.pivotaltracker.com/story/show/107939104)
+
+v1.5.2 Nov 12, 2015
+====================
+* Gracefully handle unsupported or unreleased node builds and avoid using
+heroku binaries.
+  (https://www.pivotaltracker.com/story/show/107939290)
+
+v1.5.1 Nov 06, 2015
+====================
+
+* Add support for Node 4.2.2
+  https://github.com/cloudfoundry/nodejs-buildpack/issues/32
+
+* `bin/detect` outputs buildpack details
+  (https://www.pivotaltracker.com/story/show/100757820)
+
+* Merged upstream v75..v86 (see `CHANGELOG.md`)
+
+
+v1.5.0 Jul 20, 2015
+====================
+
+* remove versions 0.8.x and 0.9.x from manifest
+  (https://www.pivotaltracker.com/story/show/97770112)
+
+* Include CF built binaries
+  (https://www.pivotaltracker.com/story/show/97136960)
+
+v1.4.2 Jul 13, 2015
+====================
+
+* Security upgrade to nodejs 0.12.7
+  Add support for node version 0.10.40
+  Remove support for node version 0.10.37
+  (https://www.pivotaltracker.com/story/show/98855140)
+
+v1.4.1 Jul 09, 2015
+====================
+
+* Security upgrade to nodejs 0.12.6
+  (https://www.pivotaltracker.com/story/show/98683546)
+
+v1.4.0 Jun 24, 2015
+====================
+
+* Merge upstream changes from Heroku (sha: f1b195427424922274807151e0dd8d1948d03ebb):
+  * Improvements to app caching logic
+
+* Remove lucid-specific binaries from manifest.yml
+	(https://www.pivotaltracker.com/story/show/96135874)
+
+* Give helpful message on unsupported stacks
+  (https://www.pivotaltracker.com/story/show/96590188)
+
+v1.3.4 Jun 08, 2015
+====================
+
+* Add support for nodejs 0.12.4
+  (https://www.pivotaltracker.com/story/show/95004952)
+
+* Provide more explicit error message for missing options
+  (https://www.pivotaltracker.com/story/show/95473896)
+
+v1.3.3 May 22, 2015
+====================
+
+* Fix bugs regarding package.json and node_modules directory interaction
+  (https://www.pivotaltracker.com/story/show/94525966)
+  (https://www.pivotaltracker.com/story/show/94516870)
+
+v1.3.2 May 20, 2015
+====================
+
+* Merge upstream changes from Heroku up to SHA d8fbb5b05be58c863f0c67f4e0e394c83b0ab5a3
+  (https://www.pivotaltracker.com/story/show/93482010)
+
+v1.3.1 May 07, 2015
+====================
+
+* Add all Node.js versions to versions.json, resolving an issue for cached
+  buildpacks and old Node.js versions
+  (https://www.pivotaltracker.com/n/projects/1042066/stories/93717296)
+* Bump buildpack-packager to support custom buildpack manifests.
+* Remove unsupported Node.js versions for for lucid64
+  (https://www.pivotaltracker.com/n/projects/1042066/stories/93218340)
+
+v1.3.0 Apr 17, 2015
+====================
+
+* Deprecated many node versions, only currently support (https://www.pivotaltracker.com/story/show/90697200)
+  - 0.8.27
+  - 0.8.28
+  - 0.9.11
+  - 0.9.12
+  - 0.10.37
+  - 0.10.38
+  - 0.11.15
+  - 0.11.16
+  - 0.12.1
+  - 0.12.2
+
+* Document Contribution guidelines (https://www.pivotaltracker.com/story/show/92459188)
+* Added cache-busting for stack switching (https://www.pivotaltracker.com/story/show/91630606)
+* Merge upstream changes from Heroku up to SHA 40214da800dadf60b9a746514ea55140f5863380 (https://www.pivotaltracker.com/story/show/90537740
+
+
+v1.2.2 Mar 26, 2015
+====================
+
+* Default to latest stable verion 0.12.0 in cached mode
+	(https://www.pivotaltracker.com/story/show/89792504)
+
+
+v1.2.1 Mar 24, 2015
+====================
+
+* Add support for node binary version 0.12.0
+	(https://www.pivotaltracker.com/story/show/89792504)
+
+* Add support for node binary version 0.10.38
+	(https://www.pivotaltracker.com/story/show/90724656)
+
+v1.2.0 Mar 17, 2015
+====================
+
+* Support cflinuxfs2 stack.
+  (https://www.pivotaltracker.com/story/show/88174344)
+
+* Removed versions 0.8.6, 0.10.14, and 0.11.4
+  (https://www.pivotaltracker.com/story/show/90294404)
+	(https://www.pivotaltracker.com/story/show/90366324)
+
+* Reference git repos by https in cf.Gemfile
+  (https://www.pivotaltracker.com/story/show/90365848)
+
+* Add checksum to `manifest.yml` for all binaries.
+	(https://www.pivotaltracker.com/story/show/89503124)
+
+v1.1.1 Dec 22, 2014
+====================
+
+* Repairs regression in NodeJS version metadata.
+  (https://www.pivotaltracker.com/story/show/84963472)
+  (https://www.pivotaltracker.com/story/show/85025278)
+
+v1.1.0 Dec 10, 2014
+====================
+
+* Merge upstream changes
+  (https://www.pivotaltracker.com/story/show/83960086)
+  * Prune devDependencies from cache
+    (https://github.com/heroku/heroku-buildpack-nodejs/pull/115)
+
+* Introduce new offline dependency packaging system
+  (https://www.pivotaltracker.com/story/show/82513994)
+  (https://www.pivotaltracker.com/story/show/83886038)
+
+* Introduce new runtime dependency translation system
+  (https://www.pivotaltracker.com/story/show/82513994)
+  (https://www.pivotaltracker.com/story/show/83483872)
+  (https://www.pivotaltracker.com/story/show/83504664)
+
+* Update the README with Machete instructions
+  (https://www.pivotaltracker.com/story/show/82692644)
+
+v1.0.4 Sep 30, 2014
+====================
+
+* Resolve broken buildpack version output.
+  (https://www.pivotaltracker.com/story/show/79781536)
+  (https://www.pivotaltracker.com/n/projects/966314/stories/79702506)
+
+v1.0.3 Sep 29, 2014
+====================
+
+* Merge upstream change:
+  * Resolve issue with bower failing to build against commit hashes
+    (https://github.com/heroku/heroku-buildpack-nodejs/issues/99)
+    (https://github.com/heroku/heroku-buildpack-nodejs/pull/121)
+
+
+v1.0.2 Sep 22, 2014
+====================
+
+* Support for new semver JSON response format
+
+* Update buildpack-packager
+  (https://www.pivotaltracker.com/story/show/79126294)
+  (https://www.pivotaltracker.com/story/show/77627098)
+
+* Update Machete
+
+* Merge upstream changes
+  * broken link to CONTRIBUTING.md
+  * npm reverted to a backwards compatible cert
+
+v1.0.1 Jul 22, 2014
+====================
+
+* Improve documentation and make the README CF specific.
+  (https://www.pivotaltracker.com/story/show/69192654)
+  (https://www.pivotaltracker.com/story/show/73157816)
+
+* Switch to new Cloud Foundry offline dependency framework
+  (https://www.pivotaltracker.com/story/show/73384192)
+
+* Improve version imprinting
+  (https://www.pivotaltracker.com/story/show/73384192)
+
+* Use Ruby 2.1.1 for packaging
+
+* Add test app without vendored dependencies
+
+* Use Procfile instead of startup command for test apps
+
+* Fix: Offline mode should not attempt to use public networks
+  (https://www.pivotaltracker.com/story/show/73420832)
+
+* Fix: NomNom attempts to reach out to a public network
+
+v1.0.0 May 19, 2014
+===================
+
+* Modify [the Heroku Nodejs buildpack](https://github.com/heroku/heroku-buildpack-nodejs) to
+  support offline mode.
